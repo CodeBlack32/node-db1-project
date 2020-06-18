@@ -19,7 +19,7 @@ server.get("/", async (req, res, next) => {
 });
 
 // Create for CRUD
-server.post("/:id", async (req, res, next) => {
+server.post("/", async (req, res, next) => {
   try {
     const payload = {
       name: req.body.name,
@@ -61,3 +61,5 @@ server.delete("/:id", async (req, res) => {
 });
 
 module.exports = server;
+
+// All Working!!
